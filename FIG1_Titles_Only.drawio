@@ -15,30 +15,30 @@
           <mxGeometry x="70" y="70" width="820" height="920" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b110" value="Task Intake &amp;amp; Intent Layer (110)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b110" value="Task Intake &amp;amp; Intent Layer (110)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=left;spacingLeft=105;" vertex="1" parent="1">
           <mxGeometry x="110" y="175" width="740" height="115" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b120" value="Execution Contract Authority — TEE (120)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b120" value="Execution Contract Authority — TEE (120)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=left;spacingLeft=105;" vertex="1" parent="1">
           <mxGeometry x="110" y="352" width="740" height="115" as="geometry"/>
         </mxCell>
         <mxCell id="badge120" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#1E7A34;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="732" y="362" width="100" height="34" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b170" value="Independent Verification Module — TEE (170)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFF7E0;strokeColor=#E0B84A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b170" value="Independent Verification Module — TEE (170)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFF7E0;strokeColor=#E0B84A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=left;spacingLeft=105;" vertex="1" parent="1">
           <mxGeometry x="110" y="575" width="740" height="115" as="geometry"/>
         </mxCell>
         <mxCell id="badge170" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#B07D10;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="732" y="585" width="100" height="34" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b180" value="Compliance Certificate &amp;amp; Secure Store (180)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b180" value="Compliance Certificate &amp;amp; Secure Store (180)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=left;spacingLeft=105;" vertex="1" parent="1">
           <mxGeometry x="110" y="752" width="740" height="115" as="geometry"/>
         </mxCell>
 
         <!-- Secure channel -->
-        <mxCell id="b106" value="Secure Channel (TLS) (106)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b106" value="Secure Channel (TLS) (106)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=left;spacingLeft=100;" vertex="1" parent="1">
           <mxGeometry x="1010" y="450" width="320" height="115" as="geometry"/>
         </mxCell>
 
@@ -47,25 +47,25 @@
           <mxGeometry x="1450" y="70" width="820" height="920" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b140" value="Remote Compliance Enforcement Engine (140)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b140" value="Remote Compliance Enforcement Engine (140)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=left;spacingLeft=105;" vertex="1" parent="1">
           <mxGeometry x="1490" y="175" width="740" height="115" as="geometry"/>
         </mxCell>
         <mxCell id="badge140" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#1E7A34;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="2112" y="185" width="100" height="34" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b150" value="Runtime Governance Subsystem (150)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b150" value="Runtime Governance Subsystem (150)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=left;spacingLeft=105;" vertex="1" parent="1">
           <mxGeometry x="1490" y="352" width="740" height="115" as="geometry"/>
         </mxCell>
         <mxCell id="badge150" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#1E7A34;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="2112" y="362" width="100" height="34" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b160" value="AI Agent Execution Engine (160)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b160" value="AI Agent Execution Engine (160)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=left;spacingLeft=105;" vertex="1" parent="1">
           <mxGeometry x="1490" y="529" width="740" height="115" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b190" value="Dual-Accountability Proof Engine (190)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b190" value="Dual-Accountability Proof Engine (190)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=left;spacingLeft=105;" vertex="1" parent="1">
           <mxGeometry x="1490" y="706" width="740" height="115" as="geometry"/>
         </mxCell>
         <mxCell id="badge190" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#1E7A34;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
@@ -77,17 +77,61 @@
           <mxGeometry x="70" y="1060" width="2200" height="280" as="geometry"/>
         </mxCell>
 
-        <mxCell id="b202" value="Secure State Transfer (202)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b202" value="Secure State Transfer (202)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=left;spacingLeft=100;" vertex="1" parent="1">
           <mxGeometry x="110" y="1140" width="640" height="115" as="geometry"/>
         </mxCell>
-        <mxCell id="b204" value="Dual Hardware Attestation (204)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b204" value="Dual Hardware Attestation (204)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=left;spacingLeft=100;" vertex="1" parent="1">
           <mxGeometry x="850" y="1140" width="640" height="115" as="geometry"/>
         </mxCell>
-        <mxCell id="b206" value="Continuous Proof Chain (206)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=center;" vertex="1" parent="1">
+        <mxCell id="b206" value="Continuous Proof Chain (206)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=left;spacingLeft=100;" vertex="1" parent="1">
           <mxGeometry x="1590" y="1140" width="640" height="115" as="geometry"/>
         </mxCell>
         <mxCell id="novelNote" value="(Novel)" style="text;html=1;align=center;fontStyle=2;fontSize=16;fontColor=#1E7A34;" vertex="1" parent="1">
           <mxGeometry x="1070" y="1285" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+
+        <mxCell id="ic110" value="📱" style="ellipse;html=1;fillColor=#DBE8F8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="140" y="202" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic120" value="✅" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="140" y="379" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic170" value="🔍" style="ellipse;html=1;fillColor=#F7E9C4;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="140" y="602" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic180" value="🏅" style="ellipse;html=1;fillColor=#DBE8F8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="140" y="779" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic106" value="🔒" style="ellipse;html=1;fillColor=#DBE8F8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="477" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic140" value="🛡️" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="202" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic150" value="👤" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="379" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic160" value="🤖" style="ellipse;html=1;fillColor=#DBE8F8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="556" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic190" value="🧾" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="733" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic202" value="🔐" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1167" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic204" value="🛡️" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1167" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ic206" value="🔗" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="1167" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="icDomL" value="📱" style="text;html=1;fontSize=26;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="810" y="82" width="60" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="icDomR" value="🖥️" style="text;html=1;fontSize=26;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2190" y="82" width="60" height="60" as="geometry"/>
         </mxCell>
 
         <!-- Edges -->
