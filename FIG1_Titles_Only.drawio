@@ -94,7 +94,7 @@
         <mxCell id="ic110" value="📱" style="ellipse;html=1;fillColor=#DBE8F8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="140" y="202" width="60" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ic120" value="✅" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="ic120" value="🛡️" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="140" y="379" width="60" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="ic170" value="🔍" style="ellipse;html=1;fillColor=#F7E9C4;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
@@ -115,10 +115,10 @@
         <mxCell id="ic160" value="🤖" style="ellipse;html=1;fillColor=#DBE8F8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1520" y="556" width="60" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ic190" value="🧾" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="ic190" value="🌐" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1520" y="733" width="60" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ic202" value="🔐" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="ic202" value="🔒" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="140" y="1167" width="60" height="60" as="geometry"/>
         </mxCell>
         <mxCell id="ic204" value="🛡️" style="ellipse;html=1;fillColor=#D3ECD8;strokeColor=none;fontSize=28;align=center;verticalAlign=middle;" vertex="1" parent="1">
