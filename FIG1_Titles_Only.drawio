@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net" modified="2026-07-09T00:00:00.000Z" agent="Claude" version="24.0.0">
+  <diagram id="fig1" name="FIG 1 - Platform (Titles Only)">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2340" pageHeight="1450" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Integrated platform dashed border -->
+        <mxCell id="platform" value="INTEGRATED PLATFORM (100)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 6;strokeColor=#12395E;strokeWidth=2;fillColor=none;verticalAlign=top;align=right;spacingRight=15;spacingTop=8;fontStyle=3;fontSize=16;fontColor=#12395E;" vertex="1" parent="1">
+          <mxGeometry x="30" y="25" width="2280" height="1000" as="geometry"/>
+        </mxCell>
+
+        <!-- Left domain -->
+        <mxCell id="dom102" value="ON-DEVICE TRUSTED EXECUTION DOMAIN (102)" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B9C6D4;strokeWidth=2;verticalAlign=top;spacingTop=14;fontStyle=1;fontSize=20;fontColor=#12395E;" vertex="1" parent="1">
+          <mxGeometry x="70" y="70" width="820" height="920" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b110" value="Task Intake &amp;amp; Intent Layer (110)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="110" y="175" width="740" height="115" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b120" value="Execution Contract Authority — TEE (120)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="110" y="352" width="740" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="badge120" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#1E7A34;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="732" y="362" width="100" height="34" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b170" value="Independent Verification Module — TEE (170)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFF7E0;strokeColor=#E0B84A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="110" y="575" width="740" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="badge170" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#B07D10;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="732" y="585" width="100" height="34" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b180" value="Compliance Certificate &amp;amp; Secure Store (180)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="110" y="752" width="740" height="115" as="geometry"/>
+        </mxCell>
+
+        <!-- Secure channel -->
+        <mxCell id="b106" value="Secure Channel (TLS) (106)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="450" width="320" height="115" as="geometry"/>
+        </mxCell>
+
+        <!-- Right domain -->
+        <mxCell id="dom104" value="REMOTE AGENT EXECUTION DOMAIN (104)" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#B9C6D4;strokeWidth=2;verticalAlign=top;spacingTop=14;fontStyle=1;fontSize=20;fontColor=#12395E;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="70" width="820" height="920" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b140" value="Remote Compliance Enforcement Engine (140)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="175" width="740" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="badge140" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#1E7A34;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2112" y="185" width="100" height="34" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b150" value="Runtime Governance Subsystem (150)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="352" width="740" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="badge150" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#1E7A34;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2112" y="362" width="100" height="34" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b160" value="AI Agent Execution Engine (160)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="529" width="740" height="115" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b190" value="Dual-Accountability Proof Engine (190)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=22;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="706" width="740" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="badge190" value="NOVEL" style="rounded=1;arcSize=50;html=1;fillColor=#1E7A34;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2112" y="716" width="100" height="34" as="geometry"/>
+        </mxCell>
+
+        <!-- Handoff subsystem -->
+        <mxCell id="handoff" value="CROSS-DEVICE HANDOFF SUBSYSTEM — Optional (200)" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;dashed=1;dashPattern=6 5;fillColor=#F2FAF3;strokeColor=#8BC79A;strokeWidth=2;verticalAlign=top;spacingTop=12;fontStyle=1;fontSize=19;fontColor=#6A3FB5;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1060" width="2200" height="280" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b202" value="Secure State Transfer (202)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1140" width="640" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="b204" value="Dual Hardware Attestation (204)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1140" width="640" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="b206" value="Continuous Proof Chain (206)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;fontStyle=1;fontSize=21;fontColor=#12395E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="1140" width="640" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="novelNote" value="(Novel)" style="text;html=1;align=center;fontStyle=2;fontSize=16;fontColor=#1E7A34;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1285" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#37474F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="b110" target="b120">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="signed request" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#37474F;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=14;fontColor=#37474F;" edge="1" parent="1" source="b120" target="b106">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="encrypted" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1A3A6B;strokeWidth=2;dashed=1;dashPattern=6 5;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=14;fontColor=#1A3A6B;" edge="1" parent="1" source="b106" target="b140">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#37474F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="b140" target="b150">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#37474F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="b150" target="b160">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#37474F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="b160" target="b190">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="proof return (TLS)" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1A3A6B;strokeWidth=2;dashed=1;dashPattern=6 5;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=14;fontColor=#1A3A6B;" edge="1" parent="1" source="b190" target="b170">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="763"/>
+              <mxPoint x="1160" y="632"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#37474F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="b170" target="b180">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="optional handoff" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#6A3FB5;strokeWidth=2;dashed=1;dashPattern=6 5;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=14;fontColor=#37474F;" edge="1" parent="1" source="b180" target="b202">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#37474F;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="b202" target="b204">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#37474F;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="b204" target="b206">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legendT" value="LEGEND" style="text;html=1;fontStyle=1;fontSize=17;fontColor=#12395E;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1380" width="120" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw1" value="" style="rounded=1;arcSize=40;html=1;fillColor=#EAF6EC;strokeColor=#7CB98A;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1384" width="46" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw1t" value="Novel / Claimed Components" style="text;html=1;fontSize=15;fontColor=#2A3A4A;" vertex="1" parent="1">
+          <mxGeometry x="286" y="1380" width="320" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw2" value="" style="rounded=1;arcSize=40;html=1;fillColor=#E9F1FB;strokeColor=#9FB8DC;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1384" width="46" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw2t" value="Standard / Existing Components" style="text;html=1;fontSize=15;fontColor=#2A3A4A;" vertex="1" parent="1">
+          <mxGeometry x="736" y="1380" width="340" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw3" value="" style="rounded=1;arcSize=40;html=1;fillColor=#FFF7E0;strokeColor=#E0B84A;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1384" width="46" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw3t" value="Verification Components" style="text;html=1;fontSize=15;fontColor=#2A3A4A;" vertex="1" parent="1">
+          <mxGeometry x="1236" y="1380" width="280" height="34" as="geometry"/>
+        </mxCell>
+        <mxCell id="sw4t" value="→ Secure Channel / Data Flow" style="text;html=1;fontSize=15;fontColor=#2A3A4A;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="1380" width="340" height="34" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
