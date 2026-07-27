@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1610" viewBox="0 0 2000 1610" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="aI" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#4338ca"/></marker>
+<marker id="aT" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#0f766e"/></marker>
+<marker id="aR" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 z" fill="#b91c1c"/></marker>
+</defs><rect width="2000" height="1610" fill="#ffffff"/>
+<text x="1000.0" y="54" font-size="34" font-weight="bold" fill="#1f2937" text-anchor="middle">DYNAMIC SKILL UPDATING — the central difference</text>
+<text x="1000.0" y="88" font-size="17" fill="#64748b" text-anchor="middle">Both systems update skills automatically. What differs is <tspan font-weight="bold" fill="#1f2937">what triggers the update, what evidence drives it, what unit changes, and how fast it lands.</tspan></text>
+<rect x="50" y="118" width="920" height="228" rx="12" fill="#f1f0fd" stroke="#b3aeea" stroke-width="2"/>
+<rect x="1030" y="118" width="920" height="228" rx="12" fill="#f0f7f5" stroke="#9cc7bf" stroke-width="2"/>
+<text x="76" y="152" font-size="21" font-weight="bold" fill="#4338ca">SkillOpt — scheduled batch update</text>
+<text x="1056" y="152" font-size="21" font-weight="bold" fill="#0f766e">VESPER — event-driven, two-speed update</text>
+<rect x="76" y="176" width="166" height="64" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="1.8"/>
+<text x="159.0" y="203" font-size="14.5" font-weight="bold" fill="#4338ca" text-anchor="middle">batch of tasks</text>
+<text x="159.0" y="224" font-size="12" fill="#475569" text-anchor="middle">40 tasks/step</text>
+<line x1="242" y1="208" x2="260" y2="208" stroke="#4338ca" stroke-width="2" marker-end="url(#aI)"/>
+<rect x="264" y="176" width="166" height="64" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="1.8"/>
+<text x="347.0" y="203" font-size="14.5" font-weight="bold" fill="#4338ca" text-anchor="middle">rollout</text>
+<text x="347.0" y="224" font-size="12" fill="#475569" text-anchor="middle">frozen LLM runs</text>
+<line x1="430" y1="208" x2="448" y2="208" stroke="#4338ca" stroke-width="2" marker-end="url(#aI)"/>
+<rect x="452" y="176" width="166" height="64" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="1.8"/>
+<text x="535.0" y="203" font-size="14.5" font-weight="bold" fill="#4338ca" text-anchor="middle">reflect</text>
+<text x="535.0" y="224" font-size="12" fill="#475569" text-anchor="middle">optimizer LLM</text>
+<line x1="618" y1="208" x2="636" y2="208" stroke="#4338ca" stroke-width="2" marker-end="url(#aI)"/>
+<rect x="640" y="176" width="166" height="64" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="1.8"/>
+<text x="723.0" y="203" font-size="14.5" font-weight="bold" fill="#4338ca" text-anchor="middle">bounded edit</text>
+<text x="723.0" y="224" font-size="12" fill="#475569" text-anchor="middle">max 4 patches</text>
+<line x1="806" y1="208" x2="824" y2="208" stroke="#4338ca" stroke-width="2" marker-end="url(#aI)"/>
+<rect x="828" y="176" width="166" height="64" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="1.8"/>
+<text x="911.0" y="203" font-size="14.5" font-weight="bold" fill="#4338ca" text-anchor="middle">held-out gate</text>
+<text x="911.0" y="224" font-size="12" fill="#475569" text-anchor="middle">strict improve</text>
+<rect x="452" y="268" width="166" height="60" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="1.8"/>
+<text x="535.0" y="295" font-size="14.5" font-weight="bold" fill="#4338ca" text-anchor="middle">skill.md v(n+1)</text>
+<text x="535.0" y="316" font-size="12" fill="#475569" text-anchor="middle">one file replaced</text>
+<line x1="911" y1="240" x2="911" y2="298" stroke="#4338ca" stroke-width="2"/><line x1="911" y1="298" x2="622" y2="298" stroke="#4338ca" stroke-width="2" marker-end="url(#aI)"/>
+<text x="130" y="300" font-size="13.5" font-weight="bold" fill="#4338ca">Cadence: per training step / per night. Nothing changes in between.</text>
+<text x="130" y="322" font-size="13.5" fill="#475569">A live failure cannot start an update — only the schedule can.</text>
+<text x="1056" y="182" font-size="14" font-weight="bold" fill="#b91c1c">FAST — inside the task (seconds)</text>
+<rect x="1056" y="192" width="178" height="60" rx="8" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="1145.0" y="219" font-size="14.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">step deviation</text>
+<text x="1145.0" y="240" font-size="12" fill="#475569" text-anchor="middle">cos &amp;lt; τ on screen</text>
+<line x1="1234" y1="222" x2="1248" y2="222" stroke="#b91c1c" stroke-width="2" marker-end="url(#aR)"/>
+<rect x="1252" y="192" width="178" height="60" rx="8" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="1341.0" y="219" font-size="14.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">re-ground</text>
+<text x="1341.0" y="240" font-size="12" fill="#475569" text-anchor="middle">failing screen = query</text>
+<line x1="1430" y1="222" x2="1444" y2="222" stroke="#b91c1c" stroke-width="2" marker-end="url(#aR)"/>
+<rect x="1448" y="192" width="178" height="60" rx="8" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+<text x="1537.0" y="219" font-size="14.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">splice step</text>
+<text x="1537.0" y="240" font-size="12" fill="#475569" text-anchor="middle">in-task repair</text>
+<text x="1056" y="286" font-size="14" font-weight="bold" fill="#0f766e">SLOW — background (M4)</text>
+<rect x="1056" y="296" width="178" height="60" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+<text x="1145.0" y="323" font-size="14.5" font-weight="bold" fill="#0f766e" text-anchor="middle">verified traces</text>
+<text x="1145.0" y="344" font-size="12" fill="#475569" text-anchor="middle">episodic memory</text>
+<line x1="1234" y1="326" x2="1248" y2="326" stroke="#0f766e" stroke-width="2" marker-end="url(#aT)"/>
+<rect x="1252" y="296" width="178" height="60" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+<text x="1341.0" y="323" font-size="14.5" font-weight="bold" fill="#0f766e" text-anchor="middle">3-layer update</text>
+<text x="1341.0" y="344" font-size="12" fill="#475569" text-anchor="middle">params/graph/strategy</text>
+<line x1="1430" y1="326" x2="1444" y2="326" stroke="#0f766e" stroke-width="2" marker-end="url(#aT)"/>
+<rect x="1448" y="296" width="178" height="60" rx="8" fill="#ffffff" stroke="#0f766e" stroke-width="1.8"/>
+<text x="1537.0" y="323" font-size="14.5" font-weight="bold" fill="#0f766e" text-anchor="middle">versioned node</text>
+<text x="1537.0" y="344" font-size="12" fill="#475569" text-anchor="middle">rollback-safe</text>
+<rect x="1650" y="192" width="272" height="164" rx="8" fill="#ffffff" stroke="#b45309" stroke-width="1.8"/>
+<text x="1786" y="220" font-size="14.5" font-weight="bold" fill="#b45309" text-anchor="middle">THIRD PATH</text>
+<text x="1786" y="244" font-size="12.5" fill="#475569" text-anchor="middle">retrieval finds nothing</text>
+<text x="1786" y="263" font-size="12.5" fill="#475569" text-anchor="middle">→ gap = E(need) − E(have)</text>
+<text x="1786" y="282" font-size="12.5" fill="#475569" text-anchor="middle">→ M1 hypothesise</text>
+<text x="1786" y="301" font-size="12.5" fill="#475569" text-anchor="middle">→ M2 compose</text>
+<text x="1786" y="320" font-size="12.5" fill="#475569" text-anchor="middle">→ M3 certify</text>
+<text x="1786" y="339" font-size="12.5" fill="#475569" text-anchor="middle">→ NEW node in graph</text>
+<rect x="50" y="380" width="1900" height="46" fill="#334e68"/>
+<text x="330" y="410" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">SkillOpt</text>
+<text x="1000" y="410" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">DIMENSION OF THE UPDATE</text>
+<text x="1620" y="410" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">VESPER</text>
+<rect x="50" y="426" width="1900" height="100" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="426" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="426" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="464" font-size="14" fill="#475569">A schedule. A training step, an epoch boundary,</text>
+<text x="72" y="486" font-size="14" fill="#475569">or the nightly Sleep cycle.</text>
+<text x="1000" y="482" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">What TRIGGERS an update</text>
+<text x="1332" y="464" font-size="14" fill="#0f766e">An EVENT. A per-step visual deviation, a retrieval miss,</text>
+<text x="1332" y="486" font-size="14" fill="#0f766e">a user correction, or a measured performance drop.</text>
+<rect x="50" y="526" width="1900" height="100" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="526" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="526" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="564" font-size="14" fill="#475569">An aggregate benchmark score over a batch of tasks —</text>
+<text x="72" y="586" font-size="14" fill="#475569">tells you the document got better or worse overall.</text>
+<text x="1000" y="582" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">What EVIDENCE drives it</text>
+<text x="1332" y="564" font-size="14" fill="#0f766e">Localized physical evidence — which step, the actual screen,</text>
+<text x="1332" y="586" font-size="14" fill="#0f766e">the expected screen, and the exact deviation.</text>
+<rect x="50" y="626" width="1900" height="100" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="626" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="626" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="664" font-size="14" fill="#475569">The one skill document. Add / delete / replace text patches</text>
+<text x="72" y="686" font-size="14" fill="#475569">on a single Markdown file shared by every task.</text>
+<text x="1000" y="682" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">What UNIT changes</text>
+<text x="1332" y="664" font-size="14" fill="#0f766e">One step inside one skill node — or a new node, or the</text>
+<text x="1332" y="686" font-size="14" fill="#0f766e">graph topology itself. Node-scoped blast radius.</text>
+<rect x="50" y="726" width="1900" height="100" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="726" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="726" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="764" font-size="14" fill="#475569">No. It can only reword what the seed document already</text>
+<text x="72" y="786" font-size="14" fill="#475569">covers. The capability set is fixed at authoring.</text>
+<text x="1000" y="770" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Can the update CREATE a</text>
+<text x="1000" y="792" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">new capability?</text>
+<text x="1332" y="764" font-size="14" fill="#0f766e">Yes. A gap becomes a hypothesis, a composition from</text>
+<text x="1332" y="786" font-size="14" fill="#0f766e">certified primitives, and a new certified graph node.</text>
+<rect x="50" y="826" width="1900" height="100" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="826" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="826" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="864" font-size="14" fill="#475569">One gate: a held-out split, accept only on strict</text>
+<text x="72" y="886" font-size="14" fill="#475569">improvement. Statistical and offline.</text>
+<text x="1000" y="882" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">HOW the update is validated</text>
+<text x="1332" y="864" font-size="14" fill="#0f766e">Three gates: sandbox certification (M3), human preview</text>
+<text x="1332" y="886" font-size="14" fill="#0f766e">(V3), and per-step visual verification at runtime (V4).</text>
+<rect x="50" y="926" width="1900" height="100" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="926" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="926" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="964" font-size="14" fill="#475569">After the training step or the night — and only if the</text>
+<text x="72" y="986" font-size="14" fill="#475569">gate passes. The user lives with the failure until then.</text>
+<text x="1000" y="982" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">WHEN it takes effect</text>
+<text x="1332" y="964" font-size="14" fill="#0f766e">Two speeds: repaired inside the running task in seconds,</text>
+<text x="1332" y="986" font-size="14" fill="#0f766e">and consolidated into the skill in the background.</text>
+<rect x="50" y="1026" width="1900" height="100" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="1026" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="1026" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="1064" font-size="14" fill="#475569">Reject the candidate and keep the previous best_skill.md.</text>
+<text x="72" y="1086" font-size="14" fill="#475569">One file, binary revert.</text>
+<text x="1000" y="1082" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">ROLLBACK semantics</text>
+<text x="1332" y="1064" font-size="14" fill="#0f766e">Versioned DAG nodes: roll one skill back to v(n−1) while</text>
+<text x="1332" y="1086" font-size="14" fill="#0f766e">everything else keeps running; hot-swap, per-node history.</text>
+<rect x="50" y="1126" width="1900" height="100" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="1126" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="1126" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="1164" font-size="14" fill="#475569">Rejected-edit buffer + optimizer-side meta-skill memory.</text>
+<text x="72" y="1186" font-size="14" fill="#475569">Not shipped with the artifact; it only shapes future edits.</text>
+<text x="1000" y="1182" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Where EXPERIENCE lives</text>
+<text x="1332" y="1164" font-size="14" fill="#0f766e">On-device tripartite memory. Episodic traces are retrievable</text>
+<text x="1332" y="1186" font-size="14" fill="#0f766e">at runtime and re-rank retrieval — memory changes selection.</text>
+<rect x="50" y="1226" width="1900" height="100" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="1226" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="1226" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="1264" font-size="14" fill="#475569">A separate, usually stronger optimizer LLM, in the cloud,</text>
+<text x="72" y="1286" font-size="14" fill="#475569">on an API budget.</text>
+<text x="1000" y="1282" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">WHO performs the update</text>
+<text x="1332" y="1264" font-size="14" fill="#0f766e">On-device modules — M1 genesis, M2 operators, M4 controller.</text>
+<text x="1332" y="1286" font-size="14" fill="#0f766e">No stronger teacher model required.</text>
+<rect x="50" y="1326" width="1900" height="100" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="50" y="1326" width="640" height="100" fill="#f1f0fd" opacity="0.55"/>
+<rect x="1310" y="1326" width="640" height="100" fill="#f0f7f5" opacity="0.75"/>
+<text x="72" y="1364" font-size="14" fill="#475569">No notion of it. A text document cannot know the UI moved;</text>
+<text x="72" y="1386" font-size="14" fill="#475569">the drop only shows up later as a lower score.</text>
+<text x="1000" y="1382" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Handling UI / version DRIFT</text>
+<text x="1332" y="1364" font-size="14" fill="#0f766e">Drift surfaces instantly as a visual deviation, triggers</text>
+<text x="1332" y="1386" font-size="14" fill="#0f766e">re-grounding, and schedules a refresh of the visual states.</text>
+<rect x="50" y="1442" width="1900" height="118" rx="12" fill="#16324f"/>
+<text x="80" y="1478" font-size="17" font-weight="bold" fill="#2fb5a8">THE POINT TO MAKE IN REVIEW</text>
+<text x="80" y="1508" font-size="16" fill="#cadcfc">Our novelty is NOT &#8220;we update skills dynamically&#8221; — SkillOpt does that, published and benchmarked. Our novelty is that the update is <tspan font-weight="bold" fill="#ffffff">triggered by physical screen evidence,</tspan></text>
+<text x="80" y="1534" font-size="16" fill="#cadcfc"><tspan font-weight="bold" fill="#ffffff">applied at node granularity inside a versioned skill graph, validated three ways, landed inside the running task, and executed entirely on-device</tspan> — and that a miss creates a skill instead of ending the request.</text>
+</svg>
