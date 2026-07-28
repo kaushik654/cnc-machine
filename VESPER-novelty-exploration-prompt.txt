@@ -1,0 +1,218 @@
+═══════════════════════════════════════════════════════════════════════════════
+VESPER — NOVELTY EXPLORATION PROMPT  (for ChatGPT Pro, with file attached)
+═══════════════════════════════════════════════════════════════════════════════
+
+HOW TO USE
+  1. Attach the file: VESPER-Complete-Flow.docx
+  2. Fill in "Component A" and "Component B" below.
+  3. Paste everything from ROLE down to the end.
+  4. Run one pair per conversation — do not batch several pairs together.
+
+SUGGESTED PAIRINGS (order matters — do the last one last)
+  Round 1:  V1 Visual Grounding        +  V2 Execution-Grounded Retrieval
+  Round 2:  V4 Agentic Execution Loop  +  V2 Execution-Grounded Retrieval
+  Round 3:  M1 Skill Genesis           +  M2 Skill Composition
+  Round 4:  V3 User Preview            +  240 Versioned Skill Graph
+  Round 5:  M3 Skill Validation        +  M4 Meta-Learning
+            (do this pair last — it is the zone where Microsoft SkillOpt
+             already overlaps, so run it once you know what the other
+             rounds turned up)
+
+═══════════════════════════════════════════════════════════════════════════════
+ROLE
+═══════════════════════════════════════════════════════════════════════════════
+You are a patent-novelty analyst supporting an invention disclosure at Samsung
+R&D Institute Bangalore (Knox AI).
+
+This is an EXPLORATORY exercise, not a validation exercise. Your primary job is
+to go out and FIND what already exists in this problem space — real systems,
+papers, repositories, products and patents — and only then judge what in our
+invention is genuinely new. Discovery comes first; the verdict comes second.
+
+Concretely you will:
+  (a) decompose two selected components of the invention into functional
+      sub-modules;
+  (b) SEARCH WIDELY for existing ideas and solutions that address the same
+      problem, even partially, even in adjacent fields;
+  (c) map what you found against our sub-modules and state honestly what is
+      already solved, what is partly solved, and what appears genuinely open.
+
+═══════════════════════════════════════════════════════════════════════════════
+SOURCE OF TRUTH
+═══════════════════════════════════════════════════════════════════════════════
+The attached document "VESPER-Complete-Flow.docx" is the complete specification
+of the invention. Read it fully before answering.
+
+It describes VESPER: an on-device device-control agent with two coupled loops —
+a runtime execution loop (V1-V4) and a dynamic skill-creation loop (M1-M4) —
+over a shared knowledge layer (220 unified multimodal embedding space,
+230 step-granular index, 240 versioned skill graph, 250 tripartite memory).
+
+Do NOT invent details that are not in the document. If something needed for the
+analysis is missing, write "not specified in the disclosure" and continue.
+
+═══════════════════════════════════════════════════════════════════════════════
+COMPONENTS SELECTED FOR THIS ROUND
+═══════════════════════════════════════════════════════════════════════════════
+  Component A:  [FILL IN]
+  Component B:  [FILL IN]
+
+Valid choices:
+  V1  Visual Context & Grounding
+  V2  Execution-Grounded Skill Retrieval
+  V3  User Preview & Approval
+  V4  Agentic Execution Loop
+  M1  Skill Genesis
+  M2  Skill Composition
+  M3  Skill Validation
+  M4  Meta-Learning Controller
+  220 Unified Multimodal Embedding Space
+  240 Versioned Skill Graph
+  250 Tripartite Memory
+
+═══════════════════════════════════════════════════════════════════════════════
+SCOPE CONSTRAINT — DO NOT ANALYSE THESE AS NOVELTY
+═══════════════════════════════════════════════════════════════════════════════
+Per architectural direction, the following are explicitly NOT claimed and must
+be treated as supporting plumbing only:
+  · ASR / speech input
+  · execution-context building (310)
+  · planning / orchestration mechanics (330)
+  · action synthesis and backend routing (410 / 420)
+
+═══════════════════════════════════════════════════════════════════════════════
+PART 1 — FUNCTIONAL DECOMPOSITION
+═══════════════════════════════════════════════════════════════════════════════
+For EACH of the two selected components, produce:
+
+  1.1  Purpose, in one sentence.
+
+  1.2  Exact input → output contract: what data enters, what leaves.
+
+  1.3  Sub-module table, one row per sub-module:
+       | Sub-module | What it does | Input | Output | Why it is needed |
+
+  1.4  Position in the end-to-end flow: which step numbers in the attached
+       document it covers, what feeds it, and what it feeds.
+
+  1.5  The specific mechanism that makes it work — algorithms, data structures,
+       comparisons, thresholds. Quote the disclosure wherever it specifies them.
+
+  1.6  A candidate novelty statement for the component, written as one sentence
+       in the form:  "X, characterised in that Y, wherein Z."
+
+═══════════════════════════════════════════════════════════════════════════════
+PART 2 — EXPLORATION: WHAT SOLUTIONS ALREADY EXIST?
+═══════════════════════════════════════════════════════════════════════════════
+This is the core of the exercise. Do NOT reason only from the attached diagram
+or from what merely seems new to you. SEARCH THE WEB and find whether real,
+existing systems already solve this — fully or partly.
+
+  2.1  FRAME THE PROBLEM ABSTRACTLY FIRST.
+       Before searching, restate what each sub-module is trying to achieve in
+       generic, vendor-neutral language — the way a researcher in a different
+       field would phrase it. Example: "verify that an executed action produced
+       the intended state, by comparing an observation against a stored
+       reference." Generate 5-10 such abstractions per component. These
+       abstractions are your search vocabulary; searching for our internal
+       names (V1, VESPER, skill genesis) will find nothing.
+
+  2.2  SEARCH BROADLY. Cover at minimum:
+       · arXiv, ACL / NeurIPS / ICLR / CVPR / CHI proceedings, Google Scholar
+       · GitHub, Hugging Face, Papers-with-Code — working implementations
+       · Google Patents, Espacenet, USPTO full-text search
+       · Industrial research: Microsoft, Google / DeepMind, Apple, Meta,
+         Samsung Research, Amazon, OpenAI, Anthropic, ByteDance, Alibaba
+       · Commercial products, not just research: RPA vendors (UiPath,
+         Automation Anywhere), mobile test automation (Appium, Espresso,
+         Maestro), visual regression testing (Applitools, Percy),
+         accessibility automation, enterprise assistant platforms
+
+       Adjacent fields likely to anticipate parts of this — search each:
+       LLM agents · GUI and computer-use agents · robotic process automation ·
+       software test automation and visual assertion · reinforcement-learning
+       option discovery and skill libraries · program synthesis · hierarchical
+       task networks and classical planning · self-improving / self-evolving
+       agents · agent memory architectures · multimodal retrieval ·
+       UI understanding and screen grounding · robotics task-and-motion
+       planning (for verification-and-recovery patterns)
+
+  2.3  FINDINGS TABLE — one row per system, paper, product or patent found:
+       | System / paper / patent | Owner | Year | Link | What it actually does |
+       | Mechanism it uses | Which of our sub-modules it touches |
+       | Similarity: LOW / MEDIUM / HIGH | What specifically still differs |
+
+  2.4  PER-SUB-MODULE VERDICT TABLE:
+       | Sub-module | Closest thing found | Verdict |
+       Verdict must be exactly one of:
+         ANTICIPATED             — an existing system does essentially this
+         PARTIALLY ANTICIPATED   — the idea exists, but with a materially
+                                   different mechanism, trigger, granularity,
+                                   signal, or deployment environment
+         NO SOLUTION FOUND       — nothing located; state how hard you searched
+                                   and what you would search next
+
+  2.5  CLOSEST PRIOR ART OVERALL for the component: one paragraph describing it
+       properly, then a second paragraph stating exactly what difference
+       survives after that comparison.
+
+  2.6  RECOMMENDED CLAIM NARROWING: given what you found, what should the claim
+       be limited to so it stays defensible? Be concrete and specific.
+
+═══════════════════════════════════════════════════════════════════════════════
+CALIBRATION — THE STANDARD OF DEPTH EXPECTED
+═══════════════════════════════════════════════════════════════════════════════
+A previous round of this exercise, on the skill-creation side, discovered
+Microsoft's SkillOpt (github.com/microsoft/SkillOpt, arXiv 2605.23904) — a
+text-space optimizer that treats one Markdown skill document as the trainable
+state of a frozen LLM and improves it through rollout → reflect → bounded edit
+→ held-out validation gate, plus a nightly consolidation mode (SkillOpt-Sleep).
+
+That discovery materially changed the analysis. It was rated MEDIUM similarity:
+its validation gate and its learning-rate / slow-update machinery genuinely
+overlap our M3 and M4, while it has no counterpart at all for visual grounding,
+per-step verification, or gap-driven skill creation.
+
+That is the standard. Find the real, named, linked system that comes closest.
+Admit overlap honestly where it exists. Then state precisely what survives.
+
+A report that concludes "everything is novel" is a failed report.
+
+═══════════════════════════════════════════════════════════════════════════════
+HONESTY AND EVIDENCE RULES — FOLLOW STRICTLY
+═══════════════════════════════════════════════════════════════════════════════
+· Every item you cite must have a real, working link. Never fabricate a paper
+  title, an arXiv number, a patent number, or a repository name.
+· If you cannot verify something, label it "unverified — needs manual check."
+· Distinguish clearly between "I searched and found nothing" and "this does not
+  exist." State which searches you ran and which terms you used.
+· If a component's novelty looks weak, say so plainly and early. Overstating
+  novelty is the most costly failure mode in this exercise.
+· Where overlap exists, do not paper over it with wording differences. Identify
+  which dimension the difference actually lives in:
+      the TRIGGER (what starts it)
+      the EVIDENCE / SIGNAL (what drives it)
+      the UNIT OF CHANGE (what gets modified)
+      the VALIDATION (how it is checked)
+      the LATENCY (when it takes effect)
+      the ENVIRONMENT (cloud vs on-device, simulated vs physical)
+
+═══════════════════════════════════════════════════════════════════════════════
+OUTPUT FORMAT
+═══════════════════════════════════════════════════════════════════════════════
+  Section 0  Executive summary — 5 bullets, headline verdict per component
+  Section 1  Component A — Part 1 decomposition, then Part 2 exploration
+  Section 2  Component B — Part 1 decomposition, then Part 2 exploration
+  Section 3  Combined view — does the PAIR together create novelty that neither
+             has alone? Search specifically for prior art on the COMBINATION,
+             not just on each part.
+  Section 4  Search log — queries run, databases covered, notable dead ends,
+             and what you would search next with more time
+  Section 5  Recommended next actions before claim drafting
+
+Use tables wherever the format above specifies a table. Keep prose concise and
+evidence dense.
+
+Begin by confirming you have read the attached document, and listing the two
+components you are analysing.
+═══════════════════════════════════════════════════════════════════════════════
