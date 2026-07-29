@@ -1,0 +1,182 @@
+═══════════════════════════════════════════════════════════════════════════════
+VESPER — PROMPT 2 of 2:  NEW PATENTABLE IDEAS & EXTENSIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+HOW TO USE
+  Send this as a FOLLOW-UP message in the SAME ChatGPT conversation where you
+  ran Prompt 1 (the novelty exploration on two components). Do not start a new
+  chat — this prompt depends on the prior-art findings you just produced.
+
+  If the conversation was lost, re-attach VESPER-Complete-Flow.docx and paste
+  the findings tables from Prompt 1 before sending this.
+
+═══════════════════════════════════════════════════════════════════════════════
+TASK
+═══════════════════════════════════════════════════════════════════════════════
+You have just decomposed two components of VESPER and searched for existing
+solutions. Now use those findings as raw material.
+
+Generate NEW patentable ideas — improvements, extensions, and additions to these
+two components and to the way they interact. These must be ideas that are NOT in
+the attached disclosure and NOT in any prior art you found. This is invention
+work, grounded in the gaps your own search just revealed.
+
+Two rules govern everything below:
+
+  RULE 1 — GROUND EVERY IDEA IN A FINDING.
+  Each idea must trace back to something specific from your Prompt 1 analysis:
+  a sub-module you marked NO SOLUTION FOUND, a limitation you noticed in the
+  closest prior art, a weakness in our own mechanism, or an unexploited
+  interaction between the two components. State that trace explicitly.
+
+  RULE 2 — MECHANISM, NOT ASPIRATION.
+  "Make retrieval smarter using context" is not an idea. "Maintain a per-screen
+  failure fingerprint so that a repair attempt that failed on a visually
+  equivalent screen is excluded from re-retrieval within the same session" is
+  an idea. If you cannot state the data structure, the signal, the trigger and
+  the decision rule, you have not produced an idea yet.
+
+═══════════════════════════════════════════════════════════════════════════════
+GENERATE IDEAS IN FIVE CATEGORIES
+═══════════════════════════════════════════════════════════════════════════════
+Produce at least the stated number in each category. Quality over volume — but
+do not skip a category.
+
+  CATEGORY A — DEEPEN  (at least 3 ideas)
+  Strengthen a sub-module that already exists in the disclosure by adding a
+  mechanism that no prior art has. Aim at sub-modules you marked NO SOLUTION
+  FOUND — that is where the white space is.
+
+  CATEGORY B — EXTEND  (at least 3 ideas)
+  Add a genuinely new capability to one of the two components — something the
+  disclosure does not describe at all, but which fits its architecture and its
+  on-device constraint.
+
+  CATEGORY C — COUPLE  (at least 3 ideas)
+  New interactions BETWEEN the two components under analysis, or between one of
+  them and a third part of VESPER. Prioritise this category: prior experience on
+  this invention has shown the coupling between loops is the strongest and least
+  anticipated claim territory. Look for signals that one component produces and
+  the other could consume but currently does not.
+
+  CATEGORY D — RESCUE  (at least 2 ideas)
+  For every sub-module you marked ANTICIPATED or PARTIALLY ANTICIPATED, propose
+  a modification that restores novelty. Change the trigger, the signal, the unit
+  of change, the validation, the latency, or the environment — whichever
+  dimension the prior art does not occupy. Name the dimension you are moving.
+
+  CATEGORY E — ADJACENT  (at least 2 ideas)
+  Higher-risk, higher-reward directions: a capability that would matter on a
+  real device, that borrows a mechanism from an adjacent field you encountered
+  during the search (robotics, test automation, RPA, program synthesis,
+  distributed systems, formal verification), and that nobody has applied to
+  on-device skill agents.
+
+═══════════════════════════════════════════════════════════════════════════════
+FORMAT FOR EACH IDEA — USE THIS TEMPLATE EXACTLY
+═══════════════════════════════════════════════════════════════════════════════
+  IDEA [A1 / B2 / C3 …] — <short memorable name>
+
+  1. Traced from
+     Which Prompt-1 finding produced this idea. Quote the row or verdict.
+
+  2. Problem it solves
+     Two sentences. What breaks today, for whom, and when.
+
+  3. Mechanism
+     The concrete design: data structures, signals, triggers, thresholds,
+     decision rules, and the order in which they fire. This is the heart of the
+     idea and should be the longest part. Be implementable.
+
+  4. Worked example
+     A short concrete trace on a real device scenario — use the Wi-Fi repair,
+     the vague "fix this" storage request, the UI-drift case, or the
+     Sunday-night skill-creation case from the disclosure.
+
+  5. Where it plugs in
+     Which component and sub-module it modifies or sits beside; what it consumes
+     and what it emits; what changes in the end-to-end flow.
+
+  6. Prior-art check  — MANDATORY, SEARCH AGAIN FOR THIS SPECIFIC IDEA
+     Run fresh searches for this idea alone. Report:
+       | Closest thing found | Owner | Year | Link | Why this idea still differs |
+     If you find the idea already exists, say so and either drop the idea or
+     state what modification would restore novelty. Do not skip this step —
+     an unchecked idea is worthless for a filing.
+
+  7. Novelty statement
+     One sentence: "X, characterised in that Y, wherein Z."
+
+  8. Claim sketch
+     One independent claim in plain structured language, plus two dependent
+     claims. Not final legal drafting — enough for an attorney to work from.
+
+  9. On-device feasibility
+     Compute, memory, latency and battery implications. Does it run inside a
+     phone's budget? What is the cheapest viable version? If it cannot run
+     on-device, say so — that is disqualifying for this invention.
+
+  10. Risks and failure modes
+      What breaks it, what makes it dangerous, what a patent examiner will
+      attack first.
+
+  11. Scores  (1-5 each, with a one-line justification per score)
+      Patentability   — how clear is the white space
+      Feasibility     — how buildable on-device, near-term
+      Impact          — how much better does the product actually get
+      Claim strength  — how hard is it to design around
+
+═══════════════════════════════════════════════════════════════════════════════
+AFTER THE IDEAS — THREE CLOSING SECTIONS
+═══════════════════════════════════════════════════════════════════════════════
+  CLOSING 1 — RANKED PORTFOLIO TABLE
+  Every idea in one table, sorted by total score:
+  | ID | Name | Category | Patentability | Feasibility | Impact | Claim strength |
+  | Total | One-line recommendation: FILE NOW / DEVELOP FURTHER / PARK / DROP |
+
+  CLOSING 2 — THE TOP THREE, DEFENDED
+  For the three highest-ranked ideas, write a paragraph each arguing why this
+  should be added to the disclosure, and a paragraph anticipating the strongest
+  objection a reviewer or examiner would raise — and how it is answered.
+
+  CLOSING 3 — WHAT NOT TO PURSUE
+  Ideas you generated internally and rejected, with the reason. This is as
+  valuable as the accepted list: it stops the team re-proposing dead ends.
+  Include anything you found to be already solved by existing systems.
+
+═══════════════════════════════════════════════════════════════════════════════
+CONSTRAINTS — ALL IDEAS MUST RESPECT THESE
+═══════════════════════════════════════════════════════════════════════════════
+  · ON-DEVICE. Everything must run locally on a phone. No cloud calls, no
+    server-side training, no external API dependency. An idea requiring a
+    stronger teacher model in the cloud is out of scope.
+
+  · DO NOT TOUCH THE UNCLAIMED ZONE. ASR / speech input, execution-context
+    building (310), planning and orchestration mechanics (330), and action
+    synthesis and backend routing (410 / 420) are deliberately not claimed.
+    Do not propose novelty there.
+
+  · RESPECT THE EXISTING ARCHITECTURE. Ideas should fit the two-loop design
+    (V1-V4 runtime, M1-M4 creation) over the shared knowledge layer (220
+    embedding space, 230 step index, 240 versioned skill graph, 250 tripartite
+    memory). An idea that requires discarding that architecture is a different
+    invention — note it separately rather than mixing it in.
+
+  · SAFETY AND GOVERNANCE MATTER. This agent creates its own skills and acts on
+    a personal device. Any idea that increases autonomy must say how it stays
+    reviewable, bounded, and reversible.
+
+  · NO FABRICATION. Every link, paper, patent number and repository you cite
+    must be real and verifiable. Label anything unverified as such.
+
+  · BE HONEST ABOUT WEAK IDEAS. If a category yields only mediocre material,
+    say so rather than padding. A short list of strong ideas beats a long list
+    of plausible-sounding ones, and padding wastes attorney time.
+
+═══════════════════════════════════════════════════════════════════════════════
+BEGIN
+═══════════════════════════════════════════════════════════════════════════════
+Start by restating, in three or four bullets, the key gaps your Prompt 1
+analysis exposed — the specific places where no existing solution was found.
+Those bullets are the brief you are inventing against. Then produce the ideas.
+═══════════════════════════════════════════════════════════════════════════════
